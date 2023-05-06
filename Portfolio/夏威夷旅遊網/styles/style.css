@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #eee;
+  box-shadow: 0 8px 6px -6px rgb(107, 107, 107);
+  transition: all 0.5s;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  flex: 5 1 400px;
+  margin-left: 2rem;
+}
+header .logo img {
+  width: 6vw;
+  height: 6vw;
+}
+header .logo h1 {
+  font-size: 2rem;
+}
+header nav {
+  flex: 2 1 400px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: #09777d;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+main section.backImage {
+  height: 90vh;
+  width: 100%;
+  background-image: url(../Pictures/pexels-photo-416676.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main section.backImage h3 {
+  font-size: 3.5rem;
+  color: white;
+  margin: 2.5rem 0;
+}
+main section.backImage button.start {
+  background-color: #3bf0e5;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+main section.backImage div.filter {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 90vh;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+main section.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main section.second h2 {
+  font-size: 2rem;
+  margin: 3rem 0;
+  line-height: 3.5rem;
+}
+main section.second section.cards {
+  display: flex;
+  width: 80%;
+  min-height: 80vh;
+  flex-wrap: wrap;
+}
+main section.second section.cards div.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  flex: 1 1 300px;
+}
+main section.second section.cards div.card .img-container {
+  overflow: hidden;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+main section.second section.cards div.card .img-container img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+main section.second section.cards div.card .img-container img:hover {
+  transform: scale(1.2);
+}
+main section.second section.cards div.card h4 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+main section.second section.cards div.card p {
+  font-size: 1.25rem;
+}
+main section.second section.cards div.card a {
+  margin: 1rem 0;
+  text-decoration: none;
+  background-color: #09777d;
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  align-items: center;
+  text-align: center;
+  background-color: gray;
+}
+footer .footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+footer .footer-logo h2 {
+  font-size: 1.75rem;
+}
+footer .footer-logo img {
+  width: 4vw;
+  height: 4vw;
+}
+footer ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer ul li {
+  display: flex;
+  flex-basis: 50px;
+}
+footer ul li a {
+  text-decoration: none;
+  margin: 1rem;
+  color: #000000;
+  font-size: 1.35rem;
+}
+footer .footer-icon a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 1.5rem;
+}
+footer .footer-icon a img {
+  width: 5rem;
+  height: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+  header .logo {
+    margin-left: 0.5rem;
+  }
+  header .logo img {
+    width: 12.5vw;
+    height: 12.5vw;
+  }
+  main section.second section.cards div.card .img-container {
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.second section.cards div.card .img-container img {
+    width: 50vw;
+    height: 50vw;
+  }
+  footer .footer-logo img {
+    width: 12vw;
+    height: 12vw;
+  }
+}/*# sourceMappingURL=style.css.map */

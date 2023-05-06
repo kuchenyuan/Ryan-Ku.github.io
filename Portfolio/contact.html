@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Robert Ku" />
+    <meta
+      name="description"
+      content="這是Ryan的個人網站。Ryan Ku是來自台灣的網頁開發人員"
+    />
+    <base target="_self" />
+    <meta name="robots" content="index, follow" />
+    <!-- google fonts setting -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <title>聯絡我們 | Ryan 網頁前端工程師</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- header and navbar -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="resume.html">我的履歷</a></li>
+          <li><a href="contact.html" class="active">聯絡方式</a></li>
+          <li><a href="./夏威夷旅遊網/index.html">Hawaii Project</a></li>
+          <li><a href="./Todo-List/index.html">Todo-List Project</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form">
+        <form>
+          <div class="div">
+            <label for="name">姓名:</label>
+            <input type="text" name="name" />
+          </div>
+          <br />
+          <div class="div">
+            <label for="email">信箱:</label>
+            <input type="email" name="email" />
+          </div>
+          <br />
+          <div class="div">
+            <label for="phone">電話:</label>
+            <input type="text" name="phone" />
+          </div>
+          <br />
+          <div class="div">
+            <label for="need">需求:</label>
+            <textarea name="need" id="need" rows="10"></textarea>
+          </div>
+          <br />
+          <button type="submit">提交表單</button>
+        </form>
+      </section>
+      <div class="line"></div>
+      <section class="contact">
+        <div class="content">
+          <h2>我的電話 : 0909-225-151</h2>
+          <h2>我的Email : Dokyaa258796726@gmail.com</h2>
+          <h2>方便聯絡時間 : 周一至周六早上八點到晚上七點</h2>
+          <h2>其他聯絡方式 : 臉書、IG</h2>
+        </div>
+      </section>
+    </main>
+
+    <!-- links for gmail, line and github -->
+    <footer>
+      <div class="links">
+        <a href="#">
+          <img
+            src="./ICONS/facebook.svg"
+            alt="facebook"
+            title="facebook page"
+          />
+        </a>
+        <a href="#"
+          ><img
+            src="./ICONS/instagram.svg"
+            alt="instagram"
+            title="instagram page"
+        /></a>
+        <a href="#"
+          ><img
+            src="./ICONS/github-brands 1.svg"
+            alt="github"
+            title="github page"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
